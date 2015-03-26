@@ -13,8 +13,8 @@ OBJECTS = $(patsubst %.cc, %.o, $(wildcard *.cc))
 
 all: $(OBJECTS)
 	rm -f libsnappy.a
-	ar -cru libsnappy.a $(OBJECTS)
-	#ar -rs libsnappy.a $(OBJECTS)
+	#ar -cru libsnappy.a $(OBJECTS)
+	ar -rs libsnappy.a $(OBJECTS)
 
 .cc.o:
 	mkdir -p ios-x86
