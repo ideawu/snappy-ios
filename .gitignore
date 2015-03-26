@@ -1,0 +1,7 @@
+*.swp
+*.swo
+*.o
+*.a
+ios-arm
+ios-x86
+
