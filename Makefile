@@ -7,7 +7,7 @@ DEVICE_SDK=$(DEVICEROOT)/SDKs/iPhoneOS$(IOSVERSION).sdk
 
 CFLAGS=-stdlib=libc++ -DHAVE_CONFIG_H -DOS_MACOSX -I. -O2
 SIMULATOR_CFLAGS=$(CFLAGS) -isysroot $(SIMULATOR_SDK) -arch i386 -arch x86_64
-DEVICE_CFLAGS=$(CFLAGS) -isysroot $(DEVICE_SDK) -arch armv6 -arch armv7
+DEVICE_CFLAGS=$(CFLAGS) -isysroot $(DEVICE_SDK) -arch armv6 -arch armv7 -arch arm64
 
 OBJECTS = $(patsubst %.cc, %.o, $(wildcard *.cc))
 
